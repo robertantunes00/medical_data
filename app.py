@@ -6,7 +6,7 @@ import time
 import re
 
 # 1. CONFIGURAÇÕES
-API_KEY = "AIzaSyD9Hmt0RAlg0dPCrcYIdyUCfN9vp6YGla8"
+API_KEY = ""
 genai.configure(api_key=API_KEY)
 MODEL_NAME = 'gemini-2.5-flash' 
 model = genai.GenerativeModel(MODEL_NAME)

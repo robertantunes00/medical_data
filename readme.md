@@ -149,23 +149,6 @@ O sistema processará todos os PDFs do diretório, exibindo logs no terminal.
 
 ---
 
-## 🔐 Segurança e Boas Práticas
-
-* A API Key **não deve** estar hardcoded
-* Os arquivos são removidos da API do Gemini após processamento
-* Recomenda-se criptografia para dados sensíveis (ex: nome do paciente)
-* Evite logs com conteúdo médico
-
----
-
-## ⚠️ Limitações Conhecidas
-
-* Qualidade da extração depende da qualidade do PDF
-* PDFs muito desalinhados podem gerar dados incompletos
-* O modelo pode exigir ajustes finos no prompt para exames específicos
-
----
-
 ## 🚀 Possíveis Evoluções
 
 * Detecção de duplicidade (idempotência)

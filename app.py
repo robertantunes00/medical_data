@@ -14,7 +14,7 @@ model = genai.GenerativeModel(MODEL_NAME)
 db_base_config = {
     'host': "localhost",
     'user': "root",
-    'password': "192401",
+    'password': "",
     'database': "medicaldata"
 }
 

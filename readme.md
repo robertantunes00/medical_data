@@ -8,7 +8,7 @@ O sistema foi projetado para lidar tanto com PDFs textuais quanto PDFs escaneado
 
 ---
 
-## 🏗 Arquitetura do Pipeline
+## Pipeline
 
 1. Leitura de arquivos PDF em diretório local
 2. Upload do PDF para a API do Gemini
@@ -24,7 +24,7 @@ PDF → Gemini API → JSON → MySQL
 
 ---
 
-## 🧠 Dados Extraídos
+## Dados Extraídos
 
 Atualmente, o sistema extrai:
 
@@ -58,7 +58,7 @@ Atualmente, o sistema extrai:
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **Python 3.10+**
 * **Google Generative AI (Gemini)**
@@ -73,7 +73,7 @@ Atualmente, o sistema extrai:
 
 ---
 
-## ⚙️ Configuração do Ambiente
+## Configuração do Ambiente
 
 ### 1. Clonar o repositório
 
@@ -82,32 +82,10 @@ git clone https://github.com/seu-usuario/extracao-medica-gemini.git
 cd extracao-medica-gemini
 ```
 
-### 2. Criar ambiente virtual (opcional)
-
-```bash
-python -m venv venv
-source venv/bin/activate  # Linux/Mac
-venv\Scripts\activate     # Windows
-```
-
 ### 3. Instalar dependências
 
 ```bash
 pip install -r requirements.txt
-```
-
-### 4. Configurar variável de ambiente (API Key)
-
-**Windows (PowerShell):**
-
-```powershell
-setx GOOGLE_API_KEY "SUA_API_KEY"
-```
-
-**Linux / Mac:**
-
-```bash
-export GOOGLE_API_KEY="SUA_API_KEY"
 ```
 
 ---
@@ -136,7 +114,7 @@ CREATE TABLE exames (
 1. Coloque os PDFs no diretório configurado:
 
 ```
-/Extração Médica Final/exames
+/exames
 ```
 
 2. Execute o script principal:
@@ -148,24 +126,8 @@ python main.py
 O sistema processará todos os PDFs do diretório, exibindo logs no terminal.
 
 ---
-
-## 🚀 Possíveis Evoluções
-
-* Detecção de duplicidade (idempotência)
-* Suporte a diagnósticos e medicamentos
-* Pipeline ETL com Airflow
-* Exportação para Data Warehouse
-* Dashboard com Power BI / Metabase
-* Criptografia de dados sensíveis
-
 ---
 
-## 👨‍💻 Autor
+## Autor
 
 Projeto desenvolvido para estudos e aplicações em **Engenharia de Dados, IA aplicada à saúde e ETL**.
-
----
-
-## 📄 Licença
-
-Este projeto é de uso educacional e experimental. Para uso comercial ou em produção, avalie requisitos legais (LGPD, HIPAA).
